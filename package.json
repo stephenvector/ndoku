@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
-    "typescript": "latest"
+    "typescript": "latest",
+    "jest": "latest",
+    "babel-jest": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-typescript": "latest"
   }
 }
