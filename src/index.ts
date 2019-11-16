@@ -1,13 +1,7 @@
-export function getRow(squareNumber: number, n: number): number {
+export function getSquareRowBoxColumn(squareIndex: number, n: number) {
   const numPerRow = n * n;
-  return Math.floor(squareNumber / numPerRow);
-}
-
-export function getColumn(squareNumber: number, n: number) {
-  const numPerRow = n * n;
-  return squareNumber % numPerRow;
-}
-
-export function getBox(squareNumber: number, n: number) {
-  return 0;
+  const row = Math.floor(squareNumber / numPerRow);
+  const column = squareNumber % numPerRow;
+  const box = Math.floor(row/n) * n + Math.floor(column/n);
+  return { row, col, box }
 }
